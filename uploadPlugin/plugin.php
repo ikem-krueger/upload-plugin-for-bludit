@@ -105,7 +105,7 @@ global $L;
  
     
 echo '
-<h3>Upload Plugins & Themes 📥</h3>';
+<h3>'.$L->get('title').'</h3>';
 
      if (isset($_POST['submit'])){
         global $message;
@@ -179,10 +179,6 @@ border-radius:5px;
 echo '<form class="pluginuploader"     enctype="multipart/form-data" method="post">
 <label style="font-size:1rem;text-style:italic;">'.$L->get('chosezip').'</label> <br> 
 <input type="hidden" id="jstokenCSRF" name="tokenCSRF" value="'.$tokenCSRF.'">
-<select name="pluginorthemes" class="pluginorthemes" style="width:100%;padding:10px;border:1px solid #ddd;margin-bottom:20px;">
-<option value="plugins">'.$L->get('plugin').'</option>
-<option value="themes">'.$L->get('theme').'</option>
-</select>
 
 <label for="zip_file" class="customfile">
  
@@ -196,17 +192,12 @@ echo '<form class="pluginuploader"     enctype="multipart/form-data" method="pos
  
 </label>
 <br />
+<select name="pluginorthemes" class="pluginorthemes" style="width:100%;padding:10px;border:1px solid #ddd;margin-bottom:20px;">
+<option value="plugins">'.$L->get('plugin').'</option>
+<option value="themes">'.$L->get('theme').'</option>
+</select>
 <input class="submit" type="submit" style=" all:unset;   cursor:pointer; padding:10px 25px !important;background:green !important;border-radius:5px;color:#fff !important" class="uploader" name="submit" value="'.$L->get('upload').'" />
 
-</form>
-
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" style="box-sizing:border-box;display:grid; width:100%;grid-template-columns:1fr auto; padding:10px;background:#fafafa;border:solid 1px #ddd;margin-top:20px;">
-    <p style="margin:0;padding:0;">'.$L->get('paypal').' </p>
-    <input type="hidden" name="cmd" value="_s-xclick">
-    <input type="hidden" name="hosted_button_id" value="KFZ9MCBUKB7GL">
-    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" border="0">
-    <img alt="" src="https://www.paypal.com/en_PL/i/scr/pixel.gif" width="1" height="1" border="0">
 </form>
 
 <script>
@@ -241,7 +232,7 @@ public function adminSidebar()
 
     $pluginName = Text::lowercase(__CLASS__);
     $url = HTML_PATH_ADMIN_ROOT.'plugin/'.$pluginName;
-    $html = '<a id="current-version" class="nav-link" href="'.$url.'">'.$L->get('menu-title').'📥</a>';
+    $html = '<a id="current-version" class="nav-link" href="'.$url.'"><span class="fa fa-upload"></span>'.$L->get('menu-title').'</a>';
  
     return $html;
 

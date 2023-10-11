@@ -1,15 +1,15 @@
 {
     "plugin-data":
     {
-        "name": "Upload Plugin",
+        "name": "Upload",
         "description": "Upload Plugins and Themes direct from Bludit CMS"
     },
-    "menu-title":"Upload Plugin",
-    "title":"Upload Plugins & Themes",
+    "menu-title":"Upload",
+    "title":"Upload Plugin or Theme",
     "choose-plugorthemes":"Choose or drop file here",
     "plugin":"Plugin",
     "theme":"Theme",
-    "chosezip":"Choose a zip file to upload (and select either Plugin or Themes):",
+    "chosezip":"Choose a zip file to upload (and select either Plugin or Theme):",
     "upload":"Upload",
     "paypal":"Support my work via PayPal :) Thanks!",
     "success":"Your Plugin or Theme was successfully uploaded and unpacked.",
