@@ -1,10 +1,10 @@
 {
     "plugin-data":
     {
-        "name": "Upload",
+        "name": "Загрузить",
         "description": "Загружайте Плагины и Темы прямо из CMS"
     },
-    "menu-title":"Upload",
+    "menu-title":"Загрузить",
     "title":"Загрузка плагинов или тем",
     "choose-plugorthemes":"Выберите файл или перетащите его сюда",
     "plugin":"Плагин",
