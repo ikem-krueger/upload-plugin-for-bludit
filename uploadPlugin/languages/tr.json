@@ -10,6 +10,7 @@
     "plugin":"Eklenti",
     "theme":"Tema",
     "chosezip":"Yüklemek için bir zip dosyası seçin (ve Eklenti veya Tema seçeneklerinden birini):",
+    "fileselected":"Dosya seçildi:",
     "upload":"Yükleyin",
     "paypal":"Beni PayPal aracılığı ile destekleyin :) Teşekkürler!",
     "success":"Eklentin veya Teman başarıyla yüklendi ve çıkarıldı.",

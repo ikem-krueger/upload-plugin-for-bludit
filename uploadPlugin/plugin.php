@@ -206,7 +206,7 @@ echo '<form class="pluginuploader"     enctype="multipart/form-data" method="pos
 setInterval(()=>{
 
    
-    document.querySelector(".path").innerHTML =  document.querySelector(".zip_file").value.replace("/C:\/","");
+    document.querySelector(".path").innerHTML = "'.$L->get('fileselected').' " + document.querySelector(".zip_file").files[0].name;
     if( document.querySelector(".zip_file").value !== ""){
 
  

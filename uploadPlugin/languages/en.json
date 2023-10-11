@@ -10,6 +10,7 @@
     "plugin":"Plugin",
     "theme":"Theme",
     "chosezip":"Choose a zip file to upload (and select either Plugin or Theme):",
+    "fileselected":"File selected:",
     "upload":"Upload",
     "paypal":"Support my work via PayPal :) Thanks!",
     "success":"Your Plugin or Theme was successfully uploaded and unpacked.",
